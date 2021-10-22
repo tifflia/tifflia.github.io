@@ -13,3 +13,7 @@ function getUser() {
     var b = localStorage.getItem("username");
     document.getElementById("placeholder").innerHTML = "Hello " + b;
 }
+
+function back() {
+    location.href="one.html";
+}
