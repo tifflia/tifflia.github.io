@@ -15,5 +15,5 @@ function getUser() {
 }
 
 function back() {
-    location.href="one.html";
+    location.href="main.html";
 }
