@@ -69,6 +69,7 @@ div.footer {
     background-color: #37472b;
     padding: 20px 4em;
     margin-top: 6em;
+    text-align: center;
 }
 
 div.icons {
@@ -278,8 +279,11 @@ li.navbar a:hover {
 }
 
 li.icon-social a {
-    color: #64704e;
     font-size: 25px;
+}
+
+#heading-left a {
+    color: #64704e;
 }
 
 .footer a {
@@ -289,11 +293,13 @@ li.icon-social a {
 li.icon-social a:hover,
 li.icon-social a:focus,
 li.icon-social a:active {
-    color: #37472b;
     transition: color 0.5s;
-    .footer {
-        color: #faf4e0;
-    }
+}
+
+#heading-left a:hover,
+#heading-left a:focus,
+#heading-left a:active {
+    color: #37472b;
 }
 
 .footer a:hover,
@@ -304,11 +310,4 @@ li.icon-social a:active {
 
 ul.icon-social {
     padding: 0;
-    .footer {
-        text-align: center;
-    }
-}
-
-.footer ul {
-    text-align: center;
 }
