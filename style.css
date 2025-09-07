@@ -253,10 +253,15 @@ ul.navbar {
     margin: 0;
 }
 
-li.navbar,
+li.navbar {
+    display: inline;
+    vertical-align: center;
+}
+
 li.icon-social {
     display: inline;
     vertical-align: center;
+    padding: 0 5px;
 }
 
 li.navbar a {
@@ -273,8 +278,8 @@ li.navbar a:hover {
 }
 
 li.icon-social a {
-    color: #616b45;
-    width: 25px;
+    color: #848c5b;
+    font-size: 25px;
 }
 
 li.icon-social a:hover,
@@ -282,4 +287,8 @@ li.icon-social a:focus,
 li.icon-social a:active {
     color: #37472b;
     transition: color 0.5s;
+}
+
+ul.icon-social {
+    padding: 0;
 }
