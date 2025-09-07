@@ -98,7 +98,7 @@ div.button {
 
 button {
     background-color: #37472b;
-    color: #faf4e1;
+    color: #faf4e0;
     border: none;
     padding: 1em 2em;
     font-size: 1em;
@@ -278,8 +278,11 @@ li.navbar a:hover {
 }
 
 li.icon-social a {
-    color: #848c5b;
+    color: #6a704e;
     font-size: 25px;
+    .footer {
+        color: #97a882;
+    }
 }
 
 li.icon-social a:hover,
@@ -287,8 +290,14 @@ li.icon-social a:focus,
 li.icon-social a:active {
     color: #37472b;
     transition: color 0.5s;
+    .footer {
+        color: #faf4e0;
+    }
 }
 
 ul.icon-social {
     padding: 0;
+    .footer {
+        text-align: center;
+    }
 }
