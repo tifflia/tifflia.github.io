@@ -246,19 +246,20 @@ div.navbar {
     padding-left: 4em;
 }
 
-ul.navbar{
+ul.navbar {
     list-style-type: none;
     padding: 1em;
     padding-right: 4em;
     margin: 0;
 }
 
-li.navbar{
+li.navbar,
+li.icon-social {
     display: inline;
     vertical-align: center;
 }
 
-li.navbar a{
+li.navbar a {
     color: #faf4e1;
     text-decoration: none;
     font-family: 'Courier New', monospace;
@@ -269,4 +270,16 @@ li.navbar a{
 li.navbar a:hover {
     color: #ffae00;
     transition: 0.4s;
+}
+
+li.icon-social a {
+    color: #616b45;
+    width: 25px;
+}
+
+li.icon-social a:hover,
+li.icon-social a:focus,
+li.icon-social a:active {
+    color: #37472b;
+    transition: color 0.5s;
 }
