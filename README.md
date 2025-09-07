@@ -1,2 +1,1 @@
-# tifflia.github.io
-github page
+My personal website! Built with raw HTML, CSS, and JavaScript.

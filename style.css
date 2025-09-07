@@ -1,3 +1,272 @@
-*{
-    background-color: skyblue;
+/* STYLE SECTIONING TAGS */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #faf4e1;
+    margin: 0;
+}
+
+.heading {
+    margin-top: 90px;
+}
+
+#heading-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#heading-left {
+    /* display: flex;
+    align-items: flex-start;
+    margin: 5em; */
+    width: 35em;
+}
+
+#heading-right {
+    margin: 5em;
+}
+
+hr.body {
+    border-top: 3px dotted #37472b;
+    margin: 5em 2em 10em;
+}
+
+hr.footer {
+    border: 0;
+    border-top: 1px dotted #97a882;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+div.main {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 50em;
+    text-align: left;
+    margin-bottom: 3em;
+}
+
+.main a {
+    color: #ffae00;
+    text-decoration: none;
+}
+
+.main a:hover {
+    text-decoration: underline;
+}
+
+.main-item {
+    flex: 1;
+    padding: 0 20px;
+}
+
+div.footer {
+    background-color: #37472b;
+    padding: 2em 4em;
+    margin-top: 6em;
+}
+
+div.icons {
+    display: flex;
+    flex-direction: row;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 30em;
+    gap: 1em;
+}
+
+div.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 7em;
+}
+
+button {
+    background-color: #37472b;
+    color: #faf4e1;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1em;
+    font-family: 'Courier New', monospace;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 90%;
+    transition: 0.3s;
+}
+
+/*responsive home intro section*/
+@media screen and (max-width: 1200px){
+    #heading-wrap {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #heading-left {
+        margin-left: 4.5em;
+    }
+}
+
+/*responsive navbar*/
+@media screen and (max-width: 900px){
+  /* turn navbar into a dropdown menu */
+}
+
+/*responsive gallery*/
+@media screen and (max-width: 1000px){
+    #gallery {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+    }
+    .column {
+        display: flex;
+        width: 30em;
+        gap: 1em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* STYLE TEXT */
+h1 {
+    color: #37472b;
+    font-family: 'Courier New', monospace;
+    font-size: 4em;
+}
+  
+h1.home {
+    /*typewriter effect*/
+    overflow: hidden;
+    border-right: .15em solid #ffae00; /*the cursor*/
+    white-space: nowrap;
+    margin: 0;
+    animation: 
+        typing 2s steps(15, end), /*divide typing animation into 15 steps*/
+        blink-caret .75s step-end infinite;
+}
+
+div.home {
+    width: max-content;
+    margin-bottom: 5em;
+    /* margin: 5em 0; (if width shrinks so picture moves) */
+}
+
+/*controls the steps in CSS animation. in this case: typing effect*/
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/*animate the blinking cursor*/
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #ffae00; }
+}
+
+h1.portfolio {
+    text-align: center;
+    margin: 0;
+    padding: 1em 0;
+    /* padding-top: 2em; */
+}
+
+h2 {
+    color: #37472b;
+    font-family: 'Courier New', monospace;
+    font-size: 3em;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+#heading-left p {
+    margin: 30px 0;
+}
+
+p {
+    color: #37472b;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 1.2em;
+}
+
+p.footer {
+    text-align: center;
+    color: #97a882;
+    margin: 0;
+    font-size: 1em;
+    padding: 1em;
+}
+
+/* STYLE IMAGES */
+#logo {
+    height: 3em;
+    padding: 1.2em 1em;
+}
+
+#portrait1 {
+    display: block;
+    width: 24em;
+}
+
+img.portfolio {
+    width: 100%;
+}
+
+
+/* STYLE NAV BAR */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #37472b;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+div.navbar {
+    padding-left: 4em;
+}
+
+ul.navbar{
+    list-style-type: none;
+    padding: 1em;
+    padding-right: 4em;
+    margin: 0;
+}
+
+li.navbar{
+    display: inline;
+    vertical-align: center;
+}
+
+li.navbar a{
+    color: #faf4e1;
+    text-decoration: none;
+    font-family: 'Courier New', monospace;
+    font-size: 1.2em;
+    padding: 1em;
+}
+
+li.navbar a:hover {
+    color: #ffae00;
+    transition: 0.4s;
 }
